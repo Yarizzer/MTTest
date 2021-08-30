@@ -12,5 +12,6 @@ protocol MainSceneViewControllerType {
 struct MainSceneViewControllerViewModel {
     enum ViewModelDataType {
         case initialSetup(with: MainSceneViewModelType)
+		case showAlert(withData: (title: String, message: String))
     }
 }

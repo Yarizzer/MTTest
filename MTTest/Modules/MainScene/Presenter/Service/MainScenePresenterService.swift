@@ -5,10 +5,10 @@
 //  Created by Yaroslav Abaturov on 28.08.2021.
 //
 
-import UIKit
-
 protocol MainScenePresenterServiceType {
 	var model: MainSceneViewModelType { get }
+	
+	func getAlertData(for type: MScAlertType) -> (title: String, message: String)
 }
 
 class MainScenePresenterService {
@@ -21,4 +21,8 @@ class MainScenePresenterService {
 
 extension MainScenePresenterService: MainScenePresenterServiceType {
 	var model: MainSceneViewModelType { return viewModel }
+	
+	func getAlertData(for type: MScAlertType) -> (title: String, message: String) {
+		return model.getAlertData(for: type)
+	}
 }

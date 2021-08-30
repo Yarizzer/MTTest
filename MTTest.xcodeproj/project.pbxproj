@@ -7,25 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112EBEA426DB606A006721DE /* PauseResumeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EBEA326DB606A006721DE /* PauseResumeButton.swift */; };
+		112EBEA626DB60F0006721DE /* PauseResumeButtonContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EBEA526DB60F0006721DE /* PauseResumeButtonContract.swift */; };
+		112EBEAA26DB7045006721DE /* TimerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EBEA826DB7045006721DE /* TimerEntity+CoreDataClass.swift */; };
+		112EBEAB26DB7045006721DE /* TimerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112EBEA926DB7045006721DE /* TimerEntity+CoreDataProperties.swift */; };
+		11475B5B26DB411E00EE3728 /* AddTimerViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11475B5A26DB411E00EE3728 /* AddTimerViewContract.swift */; };
+		11475B5D26DB438200EE3728 /* MainSceneViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11475B5C26DB438200EE3728 /* MainSceneViewModelContract.swift */; };
+		119D880E26DCBC42004BA9B7 /* AppDataBaseLayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119D880D26DCBC42004BA9B7 /* AppDataBaseLayerContract.swift */; };
 		11A15A6626DA9D9100A3A1CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A6526DA9D9100A3A1CA /* AppDelegate.swift */; };
-		11A15A6826DA9D9100A3A1CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A6726DA9D9100A3A1CA /* SceneDelegate.swift */; };
-		11A15A6A26DA9D9100A3A1CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A6926DA9D9100A3A1CA /* ViewController.swift */; };
-		11A15A6D26DA9D9100A3A1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A15A6B26DA9D9100A3A1CA /* Main.storyboard */; };
 		11A15A7026DA9D9100A3A1CA /* MTTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A6E26DA9D9100A3A1CA /* MTTest.xcdatamodeld */; };
 		11A15A7226DA9D9400A3A1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A15A7126DA9D9400A3A1CA /* Assets.xcassets */; };
 		11A15A7526DA9D9400A3A1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A15A7326DA9D9400A3A1CA /* LaunchScreen.storyboard */; };
+		11A15A8526DA9E3100A3A1CA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A8426DA9E3100A3A1CA /* AppRouter.swift */; };
+		11A15A8726DA9E4800A3A1CA /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A8626DA9E4800A3A1CA /* AppCore.swift */; };
+		11A15A8926DA9E6600A3A1CA /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A8826DA9E6600A3A1CA /* AppCoreContract.swift */; };
+		11A15A8E26DA9F4500A3A1CA /* AppStyleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A8D26DA9F4500A3A1CA /* AppStyleLayer.swift */; };
+		11A15A9126DA9F6B00A3A1CA /* AppGlobalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A9026DA9F6B00A3A1CA /* AppGlobalLayer.swift */; };
+		11A15A9426DA9FB600A3A1CA /* AppDeviceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A9326DA9FB600A3A1CA /* AppDeviceLayer.swift */; };
+		11A15A9726DA9FDC00A3A1CA /* AppDatabaseLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A9626DA9FDC00A3A1CA /* AppDatabaseLayer.swift */; };
+		11A15A9A26DAA07800A3A1CA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A9926DAA07800A3A1CA /* BaseViewController.swift */; };
+		11A15A9F26DAA0B900A3A1CA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15A9E26DAA0B900A3A1CA /* HeaderView.swift */; };
+		11A15AA126DAA0D800A3A1CA /* HeaderViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AA026DAA0D800A3A1CA /* HeaderViewContract.swift */; };
+		11A15AA626DAA11900A3A1CA /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AA526DAA11900A3A1CA /* TableViewProvider.swift */; };
+		11A15AA826DAA13B00A3A1CA /* TableViewProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AA726DAA13B00A3A1CA /* TableViewProviderViewModel.swift */; };
+		11A15AAA26DAA15500A3A1CA /* TableViewProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AA926DAA15500A3A1CA /* TableViewProviderType.swift */; };
+		11A15AB826DAA18400A3A1CA /* MainSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AAD26DAA18400A3A1CA /* MainSceneRouter.swift */; };
+		11A15AB926DAA18400A3A1CA /* MainSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AAE26DAA18400A3A1CA /* MainSceneViewControllerContract.swift */; };
+		11A15ABA26DAA18400A3A1CA /* MainScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AAF26DAA18400A3A1CA /* MainScenePresenterService.swift */; };
+		11A15ABB26DAA18400A3A1CA /* MainSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB026DAA18400A3A1CA /* MainSceneInteractorContract.swift */; };
+		11A15ABE26DAA18400A3A1CA /* MainScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB326DAA18400A3A1CA /* MainScenePresenter.swift */; };
+		11A15ABF26DAA18400A3A1CA /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB426DAA18400A3A1CA /* MainSceneViewController.swift */; };
+		11A15AC026DAA18400A3A1CA /* MainSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB526DAA18400A3A1CA /* MainSceneViewModel.swift */; };
+		11A15AC126DAA18400A3A1CA /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB626DAA18400A3A1CA /* MainSceneInteractor.swift */; };
+		11A15AC226DAA18400A3A1CA /* MainScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AB726DAA18400A3A1CA /* MainScenePresenterContract.swift */; };
+		11A15ACA26DAA20A00A3A1CA /* AddTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AC926DAA20A00A3A1CA /* AddTimerView.swift */; };
+		11A15ACE26DAA23D00A3A1CA /* AddTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15ACD26DAA23D00A3A1CA /* AddTimerButton.swift */; };
+		11A15AD026DAA26100A3A1CA /* AddTimerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15ACF26DAA26100A3A1CA /* AddTimerViewViewModel.swift */; };
+		11A15ADF26DAA55400A3A1CA /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15ADE26DAA55400A3A1CA /* TimerModel.swift */; };
+		11A15AE726DAA77A00A3A1CA /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AE626DAA77A00A3A1CA /* TimersView.swift */; };
+		11A15AE926DAA94F00A3A1CA /* TimersViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AE826DAA94F00A3A1CA /* TimersViewViewModel.swift */; };
+		11A15AEF26DAAC7500A3A1CA /* MScTimersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AEE26DAAC7500A3A1CA /* MScTimersViewCell.swift */; };
+		11A15AF126DAACEE00A3A1CA /* MScTimersViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AF026DAACEE00A3A1CA /* MScTimersViewCellViewModel.swift */; };
+		11A15AF426DAB43400A3A1CA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AF326DAB43400A3A1CA /* Logger.swift */; };
+		11A15AF826DABBD200A3A1CA /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A15AF726DABBD200A3A1CA /* Publisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112EBEA326DB606A006721DE /* PauseResumeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseResumeButton.swift; sourceTree = "<group>"; };
+		112EBEA526DB60F0006721DE /* PauseResumeButtonContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseResumeButtonContract.swift; sourceTree = "<group>"; };
+		112EBEA826DB7045006721DE /* TimerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		112EBEA926DB7045006721DE /* TimerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11475B5A26DB411E00EE3728 /* AddTimerViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerViewContract.swift; sourceTree = "<group>"; };
+		11475B5C26DB438200EE3728 /* MainSceneViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModelContract.swift; sourceTree = "<group>"; };
+		119D880D26DCBC42004BA9B7 /* AppDataBaseLayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataBaseLayerContract.swift; sourceTree = "<group>"; };
 		11A15A6226DA9D9100A3A1CA /* MTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A15A6526DA9D9100A3A1CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11A15A6726DA9D9100A3A1CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11A15A6926DA9D9100A3A1CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		11A15A6C26DA9D9100A3A1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A15A6F26DA9D9100A3A1CA /* MTTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MTTest.xcdatamodel; sourceTree = "<group>"; };
 		11A15A7126DA9D9400A3A1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A15A7426DA9D9400A3A1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A15A7626DA9D9400A3A1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A15A8426DA9E3100A3A1CA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		11A15A8626DA9E4800A3A1CA /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		11A15A8826DA9E6600A3A1CA /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
+		11A15A8D26DA9F4500A3A1CA /* AppStyleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyleLayer.swift; sourceTree = "<group>"; };
+		11A15A9026DA9F6B00A3A1CA /* AppGlobalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGlobalLayer.swift; sourceTree = "<group>"; };
+		11A15A9326DA9FB600A3A1CA /* AppDeviceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeviceLayer.swift; sourceTree = "<group>"; };
+		11A15A9626DA9FDC00A3A1CA /* AppDatabaseLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabaseLayer.swift; sourceTree = "<group>"; };
+		11A15A9926DAA07800A3A1CA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		11A15A9E26DAA0B900A3A1CA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		11A15AA026DAA0D800A3A1CA /* HeaderViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewContract.swift; sourceTree = "<group>"; };
+		11A15AA526DAA11900A3A1CA /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
+		11A15AA726DAA13B00A3A1CA /* TableViewProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderViewModel.swift; sourceTree = "<group>"; };
+		11A15AA926DAA15500A3A1CA /* TableViewProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviderType.swift; sourceTree = "<group>"; };
+		11A15AAD26DAA18400A3A1CA /* MainSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneRouter.swift; sourceTree = "<group>"; };
+		11A15AAE26DAA18400A3A1CA /* MainSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		11A15AAF26DAA18400A3A1CA /* MainScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterService.swift; sourceTree = "<group>"; };
+		11A15AB026DAA18400A3A1CA /* MainSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractorContract.swift; sourceTree = "<group>"; };
+		11A15AB326DAA18400A3A1CA /* MainScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenter.swift; sourceTree = "<group>"; };
+		11A15AB426DAA18400A3A1CA /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
+		11A15AB526DAA18400A3A1CA /* MainSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewModel.swift; sourceTree = "<group>"; };
+		11A15AB626DAA18400A3A1CA /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
+		11A15AB726DAA18400A3A1CA /* MainScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScenePresenterContract.swift; sourceTree = "<group>"; };
+		11A15AC926DAA20A00A3A1CA /* AddTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerView.swift; sourceTree = "<group>"; };
+		11A15ACD26DAA23D00A3A1CA /* AddTimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerButton.swift; sourceTree = "<group>"; };
+		11A15ACF26DAA26100A3A1CA /* AddTimerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerViewViewModel.swift; sourceTree = "<group>"; };
+		11A15ADE26DAA55400A3A1CA /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		11A15AE626DAA77A00A3A1CA /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
+		11A15AE826DAA94F00A3A1CA /* TimersViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewViewModel.swift; sourceTree = "<group>"; };
+		11A15AEE26DAAC7500A3A1CA /* MScTimersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MScTimersViewCell.swift; sourceTree = "<group>"; };
+		11A15AF026DAACEE00A3A1CA /* MScTimersViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MScTimersViewCellViewModel.swift; sourceTree = "<group>"; };
+		11A15AF326DAB43400A3A1CA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		11A15AF726DABBD200A3A1CA /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112EBEA226DB603D006721DE /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				112EBEA726DB6120006721DE /* PauseResumeButton */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		112EBEA726DB6120006721DE /* PauseResumeButton */ = {
+			isa = PBXGroup;
+			children = (
+				112EBEA326DB606A006721DE /* PauseResumeButton.swift */,
+				112EBEA526DB60F0006721DE /* PauseResumeButtonContract.swift */,
+			);
+			path = PauseResumeButton;
+			sourceTree = "<group>";
+		};
 		11A15A5926DA9D9100A3A1CA = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +147,419 @@
 		11A15A6426DA9D9100A3A1CA /* MTTest */ = {
 			isa = PBXGroup;
 			children = (
-				11A15A6526DA9D9100A3A1CA /* AppDelegate.swift */,
-				11A15A6726DA9D9100A3A1CA /* SceneDelegate.swift */,
-				11A15A6926DA9D9100A3A1CA /* ViewController.swift */,
-				11A15A6B26DA9D9100A3A1CA /* Main.storyboard */,
-				11A15A7126DA9D9400A3A1CA /* Assets.xcassets */,
-				11A15A7326DA9D9400A3A1CA /* LaunchScreen.storyboard */,
-				11A15A7626DA9D9400A3A1CA /* Info.plist */,
-				11A15A6E26DA9D9100A3A1CA /* MTTest.xcdatamodeld */,
+				11A15A7C26DA9DC000A3A1CA /* Application */,
+				11A15A9826DAA06200A3A1CA /* Common */,
+				11A15AAB26DAA16C00A3A1CA /* Modules */,
+				11A15A8026DA9DE900A3A1CA /* Sources */,
+				11A15A8126DA9DF000A3A1CA /* LaunchScreen */,
+				11A15A8226DA9DFB00A3A1CA /* SupportingFiles */,
+				11A15A8326DA9E0300A3A1CA /* LocalStorage */,
 			);
 			path = MTTest;
+			sourceTree = "<group>";
+		};
+		11A15A7C26DA9DC000A3A1CA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A7E26DA9DCF00A3A1CA /* AppRouter */,
+				11A15A7D26DA9DC700A3A1CA /* AppDelegate */,
+				11A15A7F26DA9DD600A3A1CA /* AppCore */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11A15A7D26DA9DC700A3A1CA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A6526DA9D9100A3A1CA /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11A15A7E26DA9DCF00A3A1CA /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A8426DA9E3100A3A1CA /* AppRouter.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		11A15A7F26DA9DD600A3A1CA /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AF226DAB41E00A3A1CA /* Utils */,
+				11A15A8A26DA9E7300A3A1CA /* Layers */,
+				11A15A8626DA9E4800A3A1CA /* AppCore.swift */,
+				11A15A8826DA9E6600A3A1CA /* AppCoreContract.swift */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		11A15A8026DA9DE900A3A1CA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A7126DA9D9400A3A1CA /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		11A15A8126DA9DF000A3A1CA /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A7326DA9D9400A3A1CA /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		11A15A8226DA9DFB00A3A1CA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A7626DA9D9400A3A1CA /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11A15A8326DA9E0300A3A1CA /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ADA26DAA4C300A3A1CA /* Entities */,
+				11A15A6E26DA9D9100A3A1CA /* MTTest.xcdatamodeld */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		11A15A8A26DA9E7300A3A1CA /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A9526DA9FC900A3A1CA /* Database */,
+				11A15A9226DA9FA200A3A1CA /* Device */,
+				11A15A8F26DA9F5800A3A1CA /* Global */,
+				11A15A8B26DA9E7A00A3A1CA /* Style */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		11A15A8B26DA9E7A00A3A1CA /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A8D26DA9F4500A3A1CA /* AppStyleLayer.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		11A15A8F26DA9F5800A3A1CA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A9026DA9F6B00A3A1CA /* AppGlobalLayer.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		11A15A9226DA9FA200A3A1CA /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A9326DA9FB600A3A1CA /* AppDeviceLayer.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		11A15A9526DA9FC900A3A1CA /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ADC26DAA53500A3A1CA /* Models */,
+				11A15A9626DA9FDC00A3A1CA /* AppDatabaseLayer.swift */,
+				119D880D26DCBC42004BA9B7 /* AppDataBaseLayerContract.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		11A15A9826DAA06200A3A1CA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AF626DABBB100A3A1CA /* Publisher */,
+				11A15AA226DAA0E800A3A1CA /* Providers */,
+				11A15A9B26DAA08C00A3A1CA /* ViewElements */,
+				11A15A9926DAA07800A3A1CA /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		11A15A9B26DAA08C00A3A1CA /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A9C26DAA09600A3A1CA /* HeaderView */,
+			);
+			path = ViewElements;
+			sourceTree = "<group>";
+		};
+		11A15A9C26DAA09600A3A1CA /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				11A15A9E26DAA0B900A3A1CA /* HeaderView.swift */,
+				11A15AA026DAA0D800A3A1CA /* HeaderViewContract.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		11A15AA226DAA0E800A3A1CA /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AA326DAA0F000A3A1CA /* TableViewProvider */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		11A15AA326DAA0F000A3A1CA /* TableViewProvider */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AA426DAA10B00A3A1CA /* Protocols */,
+				11A15AA526DAA11900A3A1CA /* TableViewProvider.swift */,
+			);
+			path = TableViewProvider;
+			sourceTree = "<group>";
+		};
+		11A15AA426DAA10B00A3A1CA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AA726DAA13B00A3A1CA /* TableViewProviderViewModel.swift */,
+				11A15AA926DAA15500A3A1CA /* TableViewProviderType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		11A15AAB26DAA16C00A3A1CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AAC26DAA17300A3A1CA /* MainScene */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11A15AAC26DAA17300A3A1CA /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AC326DAA19F00A3A1CA /* Router */,
+				11A15AD526DAA34400A3A1CA /* ViewModel */,
+				11A15AD326DAA32400A3A1CA /* Interactor */,
+				11A15AD126DAA2BF00A3A1CA /* Presenter */,
+				11A15AC426DAA1D300A3A1CA /* View */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		11A15AC326DAA19F00A3A1CA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AAD26DAA18400A3A1CA /* MainSceneRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		11A15AC426DAA1D300A3A1CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AC526DAA1DE00A3A1CA /* Elements */,
+				11A15AB426DAA18400A3A1CA /* MainSceneViewController.swift */,
+				11A15AAE26DAA18400A3A1CA /* MainSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11A15AC526DAA1DE00A3A1CA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AC626DAA1E800A3A1CA /* AddTimerView */,
+				11A15AE326DAA75800A3A1CA /* TimersView */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		11A15AC626DAA1E800A3A1CA /* AddTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AC826DAA1F700A3A1CA /* ViewModel */,
+				11A15AC726DAA1F200A3A1CA /* View */,
+			);
+			path = AddTimerView;
+			sourceTree = "<group>";
+		};
+		11A15AC726DAA1F200A3A1CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ACB26DAA22100A3A1CA /* Elements */,
+				11A15AC926DAA20A00A3A1CA /* AddTimerView.swift */,
+				11475B5A26DB411E00EE3728 /* AddTimerViewContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11A15AC826DAA1F700A3A1CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ACF26DAA26100A3A1CA /* AddTimerViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11A15ACB26DAA22100A3A1CA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ACC26DAA22A00A3A1CA /* AddTimerButton */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		11A15ACC26DAA22A00A3A1CA /* AddTimerButton */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ACD26DAA23D00A3A1CA /* AddTimerButton.swift */,
+			);
+			path = AddTimerButton;
+			sourceTree = "<group>";
+		};
+		11A15AD126DAA2BF00A3A1CA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AD226DAA2C700A3A1CA /* Service */,
+				11A15AB326DAA18400A3A1CA /* MainScenePresenter.swift */,
+				11A15AB726DAA18400A3A1CA /* MainScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		11A15AD226DAA2C700A3A1CA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AAF26DAA18400A3A1CA /* MainScenePresenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		11A15AD326DAA32400A3A1CA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AB626DAA18400A3A1CA /* MainSceneInteractor.swift */,
+				11A15AB026DAA18400A3A1CA /* MainSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		11A15AD526DAA34400A3A1CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AB526DAA18400A3A1CA /* MainSceneViewModel.swift */,
+				11475B5C26DB438200EE3728 /* MainSceneViewModelContract.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11A15ADA26DAA4C300A3A1CA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ADB26DAA4CC00A3A1CA /* TimerEntity */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		11A15ADB26DAA4CC00A3A1CA /* TimerEntity */ = {
+			isa = PBXGroup;
+			children = (
+				112EBEA826DB7045006721DE /* TimerEntity+CoreDataClass.swift */,
+				112EBEA926DB7045006721DE /* TimerEntity+CoreDataProperties.swift */,
+			);
+			path = TimerEntity;
+			sourceTree = "<group>";
+		};
+		11A15ADC26DAA53500A3A1CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ADD26DAA53F00A3A1CA /* Timer */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11A15ADD26DAA53F00A3A1CA /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				11A15ADE26DAA55400A3A1CA /* TimerModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		11A15AE326DAA75800A3A1CA /* TimersView */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AE526DAA76B00A3A1CA /* ViewModel */,
+				11A15AE426DAA76500A3A1CA /* View */,
+			);
+			path = TimersView;
+			sourceTree = "<group>";
+		};
+		11A15AE426DAA76500A3A1CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AEA26DAAC4000A3A1CA /* Elements */,
+				11A15AE626DAA77A00A3A1CA /* TimersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11A15AE526DAA76B00A3A1CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AE826DAA94F00A3A1CA /* TimersViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11A15AEA26DAAC4000A3A1CA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AEB26DAAC4800A3A1CA /* Cells */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		11A15AEB26DAAC4800A3A1CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AED26DAAC5500A3A1CA /* ViewModel */,
+				11A15AEC26DAAC5000A3A1CA /* View */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11A15AEC26DAAC5000A3A1CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				112EBEA226DB603D006721DE /* Elements */,
+				11A15AEE26DAAC7500A3A1CA /* MScTimersViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11A15AED26DAAC5500A3A1CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AF026DAACEE00A3A1CA /* MScTimersViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11A15AF226DAB41E00A3A1CA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AF326DAB43400A3A1CA /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		11A15AF626DABBB100A3A1CA /* Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				11A15AF726DABBD200A3A1CA /* Publisher.swift */,
+			);
+			path = Publisher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +621,6 @@
 			files = (
 				11A15A7526DA9D9400A3A1CA /* LaunchScreen.storyboard in Resources */,
 				11A15A7226DA9D9400A3A1CA /* Assets.xcassets in Resources */,
-				11A15A6D26DA9D9100A3A1CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,24 +631,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A15ABB26DAA18400A3A1CA /* MainSceneInteractorContract.swift in Sources */,
+				11A15AA826DAA13B00A3A1CA /* TableViewProviderViewModel.swift in Sources */,
+				11A15AC126DAA18400A3A1CA /* MainSceneInteractor.swift in Sources */,
+				11A15ABF26DAA18400A3A1CA /* MainSceneViewController.swift in Sources */,
+				11A15AEF26DAAC7500A3A1CA /* MScTimersViewCell.swift in Sources */,
+				11A15AAA26DAA15500A3A1CA /* TableViewProviderType.swift in Sources */,
 				11A15A7026DA9D9100A3A1CA /* MTTest.xcdatamodeld in Sources */,
-				11A15A6A26DA9D9100A3A1CA /* ViewController.swift in Sources */,
+				112EBEAB26DB7045006721DE /* TimerEntity+CoreDataProperties.swift in Sources */,
+				11A15AA126DAA0D800A3A1CA /* HeaderViewContract.swift in Sources */,
+				11A15ABE26DAA18400A3A1CA /* MainScenePresenter.swift in Sources */,
+				11A15ACA26DAA20A00A3A1CA /* AddTimerView.swift in Sources */,
+				11A15AF826DABBD200A3A1CA /* Publisher.swift in Sources */,
+				11A15AC226DAA18400A3A1CA /* MainScenePresenterContract.swift in Sources */,
+				11A15AE926DAA94F00A3A1CA /* TimersViewViewModel.swift in Sources */,
+				11A15ABA26DAA18400A3A1CA /* MainScenePresenterService.swift in Sources */,
+				11A15AB826DAA18400A3A1CA /* MainSceneRouter.swift in Sources */,
 				11A15A6626DA9D9100A3A1CA /* AppDelegate.swift in Sources */,
-				11A15A6826DA9D9100A3A1CA /* SceneDelegate.swift in Sources */,
+				11A15AF126DAACEE00A3A1CA /* MScTimersViewCellViewModel.swift in Sources */,
+				11A15A8726DA9E4800A3A1CA /* AppCore.swift in Sources */,
+				11A15AB926DAA18400A3A1CA /* MainSceneViewControllerContract.swift in Sources */,
+				11A15ADF26DAA55400A3A1CA /* TimerModel.swift in Sources */,
+				112EBEAA26DB7045006721DE /* TimerEntity+CoreDataClass.swift in Sources */,
+				11A15A9126DA9F6B00A3A1CA /* AppGlobalLayer.swift in Sources */,
+				11A15ACE26DAA23D00A3A1CA /* AddTimerButton.swift in Sources */,
+				11A15AA626DAA11900A3A1CA /* TableViewProvider.swift in Sources */,
+				11A15AC026DAA18400A3A1CA /* MainSceneViewModel.swift in Sources */,
+				119D880E26DCBC42004BA9B7 /* AppDataBaseLayerContract.swift in Sources */,
+				11A15A9726DA9FDC00A3A1CA /* AppDatabaseLayer.swift in Sources */,
+				11475B5D26DB438200EE3728 /* MainSceneViewModelContract.swift in Sources */,
+				112EBEA426DB606A006721DE /* PauseResumeButton.swift in Sources */,
+				11A15A9A26DAA07800A3A1CA /* BaseViewController.swift in Sources */,
+				11A15A8E26DA9F4500A3A1CA /* AppStyleLayer.swift in Sources */,
+				11A15AE726DAA77A00A3A1CA /* TimersView.swift in Sources */,
+				11A15A9F26DAA0B900A3A1CA /* HeaderView.swift in Sources */,
+				112EBEA626DB60F0006721DE /* PauseResumeButtonContract.swift in Sources */,
+				11A15AF426DAB43400A3A1CA /* Logger.swift in Sources */,
+				11A15A9426DA9FB600A3A1CA /* AppDeviceLayer.swift in Sources */,
+				11475B5B26DB411E00EE3728 /* AddTimerViewContract.swift in Sources */,
+				11A15A8526DA9E3100A3A1CA /* AppRouter.swift in Sources */,
+				11A15A8926DA9E6600A3A1CA /* AppCoreContract.swift in Sources */,
+				11A15AD026DAA26100A3A1CA /* AddTimerViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		11A15A6B26DA9D9100A3A1CA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11A15A6C26DA9D9100A3A1CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		11A15A7326DA9D9400A3A1CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +812,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
-				INFOPLIST_FILE = MTTest/Info.plist;
+				INFOPLIST_FILE = MTTest/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +820,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yarizzer.MTTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +831,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54L37Y4QC4;
-				INFOPLIST_FILE = MTTest/Info.plist;
+				INFOPLIST_FILE = MTTest/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yarizzer.MTTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

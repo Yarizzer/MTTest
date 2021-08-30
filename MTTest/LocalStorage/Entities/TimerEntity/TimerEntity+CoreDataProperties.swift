@@ -16,10 +16,10 @@ extension TimerEntity {
         return NSFetchRequest<TimerEntity>(entityName: "TimerEntity")
     }
 
-    @NSManaged public var dueMoment: Double
-    @NSManaged public var name: String?
-    @NSManaged public var uuid: String?
-    @NSManaged public var startMoment: Double
+    @NSManaged public var secondsCount: Double
+    @NSManaged public var name: String
+    @NSManaged public var uuid: String
+    @NSManaged public var startMoment: Date?
 
 }
 

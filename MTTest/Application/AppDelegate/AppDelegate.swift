@@ -11,11 +11,26 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+	var window: UIWindow?
+	private var router: AppRoutable?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		let window = UIWindow(frame: UIScreen.main.bounds)
+		window.backgroundColor = .systemBackground
+		self.window = window
+		router = AppRouter(withWindow: window)
+		
+		routeToMainScene()
+
 		return true
+	}
+	
+	func applicationDidBecomeActive(_ application: UIApplication) {
+		AppCore.shared.prepareSession()
+	}
+	
+	private func routeToMainScene() {
+		self.router?.routeToMainScene()
 	}
 
 	// MARK: - Core Data stack
@@ -62,6 +77,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	        }
 	    }
 	}
-
 }
-

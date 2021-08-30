@@ -3,7 +3,6 @@
 //  MTTest
 //
 //  Created by Yaroslav Abaturov on 28.08.2021.
-//  Copyright (c) 2021 ___ORGANIZATIONNAME___. All rights reserved.
 //
 
 import UIKit
@@ -28,16 +27,19 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
 		view.backgroundColor = AppCore.shared.styleLayer.colorWhite
 		
 		addTimerView = AddTimerView()
+		timersView = TimersView()
 		
-		guard let addTimerView = addTimerView else { return }
+		guard let addTimerView = addTimerView, let timersView = timersView else { return }
 		
 		view.addSubview(addTimerView)
+		view.addSubview(timersView)
 	}
 	
 	private func setupConstraints() {
-		guard let addTimerView = addTimerView else { return }
+		guard let addTimerView = addTimerView, let timersView = timersView else { return }
 		
 		addTimerView.translatesAutoresizingMaskIntoConstraints = false
+		timersView.translatesAutoresizingMaskIntoConstraints = false
 		
 		//Add timer view
 		let paddingValue = (AppCore.shared.deviceLayer.hasTopNotch ? Constants.topConstraintValueWithNotch : Constants.topConstraintValueWithoutNotch)
@@ -49,9 +51,19 @@ class MainSceneViewController: BaseViewController<MainSceneInteractable> {
 									 addTimerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
 									 addTimerView.trailingAnchor.constraint(equalTo: view.trailingAnchor)])
 
+		//Timers View
+		NSLayoutConstraint.activate([timersView.topAnchor.constraint(equalTo: addTimerView.bottomAnchor),
+									 timersView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+									 timersView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+									 timersView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
+	}
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		self.view.endEditing(true)
 	}
 	
 	private var addTimerView: AddTimerView?
+	private var timersView: TimersView?
 }
 
 extension MainSceneViewController: MainSceneViewControllerType {
@@ -60,11 +72,36 @@ extension MainSceneViewController: MainSceneViewControllerType {
 		case .initialSetup(let model):
 			self.navigationItem.title = model.sceneTitle
 			
-			guard let addTimerView = addTimerView else { return }
+			guard let addTimerView = addTimerView, let timersView = timersView else { return }
 			
 			addTimerView.initialSetup { [weak self] success in
 				self?.addTimerView?.configure(with: model.addTimerViewViewModel)
 			}
+			
+			timersView.initialSetup { [weak self] success in
+				let timersViewViewModel = model.timersViewViewModel
+				timersViewViewModel.setupSubscription()
+				
+				self?.timersView?.configure(with: timersViewViewModel)
+			}
+	
+			addTimerView.event.subscribe(self) { [weak self] data in
+				guard let type = data.newValue else { return }
+				
+				switch type {
+				case .didStored: self?.interactor?.makeRequest(requestType: .showAlert(withType: .timerDidStored))
+				case .validationError: self?.interactor?.makeRequest(requestType: .showAlert(withType: .validationError))
+				}
+			}
+			
+		case .showAlert(let data):
+			let ac = UIAlertController(title: data.title, message: data.message, preferredStyle: .alert)
+			
+			let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+			
+			ac.addAction(okAction)
+			
+			self.present(ac, animated: true, completion: nil)
 		}
 	}
 }

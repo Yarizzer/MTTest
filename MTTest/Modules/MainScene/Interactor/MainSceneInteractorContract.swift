@@ -12,5 +12,6 @@ protocol MainSceneInteractable {
 struct MainSceneInteractorRequest {
 	enum RequestType {
 		case initialSetup
+		case showAlert(withType: MScAlertType)
 	}
 }

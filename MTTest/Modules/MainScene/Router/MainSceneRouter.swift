@@ -17,13 +17,12 @@ class MainSceneRouter {
 
 extension MainSceneRouter: MainSceneRoutable {
 	static func assembly() -> UIViewController {
-		let router = MainSceneRouter()
+		let router 				= MainSceneRouter()
 		let vc                  = MainSceneViewController()
 		let viewModel           = MainSceneViewModel()
 		let presenterService    = MainScenePresenterService(withModel: viewModel)
 		let presenter           = MainScenePresenter(for: vc, service: presenterService)
-		let interactorService   = MainSceneInteractorService(withModel: viewModel)
-		let interactor          = MainSceneInteractor(withRouter: router, presenter: presenter, service: interactorService)
+		let interactor          = MainSceneInteractor(withRouter: router, presenter: presenter)
 		
 		router.view = vc
 		

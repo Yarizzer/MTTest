@@ -6,20 +6,21 @@
 //
 
 class MainSceneInteractor {
-	init(withRouter router: MainSceneRoutable, presenter: MainScenePresentable) {
+	init(withRouter router: MainSceneRoutable, presenter: MainScenePresentable, service: MainSceneInteractorServiceType) {
 		self.router = router
 		self.presenter = presenter
+		self.service = service
 	}
 
 	private var router: MainSceneRoutable
 	private var presenter: MainScenePresentable
+	private var service: MainSceneInteractorServiceType
 }
 
 extension MainSceneInteractor: MainSceneInteractable {
 	func makeRequest(requestType: MainSceneInteractorRequest.RequestType) {
 		switch requestType {
 		case .initialSetup: presenter.response(responseType: .initialSetup)
-		case .showAlert(let type): presenter.response(responseType: .showAlert(withType: type))
 		}
 	}
 }
